@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
+
+  resources :listings do
   resources :reviews, except: [:show, :index]
-  resources :listings
-  resources :listings
+  end
   get 'pages/about'
 
   get 'pages/contact'
