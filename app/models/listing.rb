@@ -5,5 +5,4 @@ class Listing < ActiveRecord::Base
   						 :dropbox_credentials => Rails.root.join("config/dropbox.yml")
 
 						 has_many :reviews, dependent: :destroy
-
 end
